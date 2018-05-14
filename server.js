@@ -63,6 +63,6 @@ app.get('/bad',(req,res)=>{
         errorMessage:'unable to fulfil your request'
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
 });

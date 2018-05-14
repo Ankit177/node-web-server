@@ -53,7 +53,11 @@ app.get('/about',(req,res)=>{
         //currentYear:new Date().getFullYear()
     });
 });
-
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageHeading:'Project Page'
+    });
+})
 app.get('/bad',(req,res)=>{
     res.send({
         errorMessage:'unable to fulfil your request'
